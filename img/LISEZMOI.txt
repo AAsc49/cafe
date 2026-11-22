@@ -1,0 +1,8 @@
+Images Grok à déposer ici (extension au choix : .webp, .jpg, .jpeg ou .png) :
+  ban      1920x800   bannière (page d'accueil)
+  tab1     1600x1067  onglet Préparation
+  tab2     1600x900   onglet Torréfaction
+  tab3     1920x1080  onglet Origines
+  backup   1024x1024  motif de fond répétable (sections bleues)
+Exemple : img/ban.jpg, img/tab1.png...
+Tant qu'une image est absente, un cadre pastel indique son nom et ses dimensions.
