@@ -15,7 +15,7 @@ Méthodes d'extraction, réglages précis, principes de torréfaction et grands 
 
 == ACC-03 ==  Explorer le café · « Préparation »
 
-### Préparations
+### Préparation
 
 Espresso, V60, Chemex, AeroPress, piston, moka, cold brew… Ratios, mouture, température, temps et TDS pour chaque méthode, avec un calculateur.
 
