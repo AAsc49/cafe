@@ -15,7 +15,7 @@ Méthodes d'extraction, réglages précis, principes de torréfaction et grands 
 
 == ACC-03 ==  Explorer le café · « Préparation »
 
-### Préparation
+### Préparations
 
 Espresso, V60, Chemex, AeroPress, piston, moka, cold brew… Ratios, mouture, température, temps et TDS pour chaque méthode, avec un calculateur.
 
@@ -70,3 +70,4 @@ Elle représente plus de 98 % d'un filtre. Une eau trop dure écrase les arômes
 ### L'extraction
 
 Ratio, mouture, température et temps : quatre réglages qui déterminent ce que l'eau dissout du café.
+
