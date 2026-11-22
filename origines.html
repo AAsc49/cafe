@@ -1,252 +1,160 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Origines du café — pays producteurs, terroirs, arômes</title>
-<meta name="description" content="Les pays producteurs de café, leurs grands terroirs, leurs profils aromatiques et leur place sur le marché mondial.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-<link rel="icon" href="assets/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" href="assets/favicon.png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<meta name="author" content="Antoine ASCENSI">
+<meta content="Les pays producteurs de café, leurs grands terroirs, leurs profils aromatiques et leur place sur le marché mondial." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&amp;family=Nunito:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="assets/favicon.ico" rel="icon" sizes="any"/>
+<link href="assets/favicon.png" rel="icon" type="image/png"/>
+<link href="assets/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="Antoine ASCENSI" name="author"/>
 <script>try{var t=localStorage.getItem('theme');if(t==='sombre'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.dataset.theme='sombre';}catch(e){}</script>
-<link rel="stylesheet" href="style.css">
+<link href="style.css" rel="stylesheet"/>
 </head>
-<body>
-
+<body data-contenu="contenu/origines.md">
 <header class="site">
-  <div class="wrap">
-    <a class="logo" href="index.html"><img src="assets/logo.png" alt="Logo A106"><span>Connaissance du café</span></a>
-    <div class="nav-droite">
-      <nav class="onglets">
-        <a href="preparation.html">Préparation</a>
-        <a href="torrefaction.html">Torréfaction</a>
-        <a href="origines.html" class="actif">Origines</a>
-        <a href="materiel.html" class="second">Matériel</a>
-        <a href="glossaire.html" class="second">Glossaire</a>
-      </nav>
-      <button class="theme-btn" type="button" aria-label="Changer de thème">☾</button>
-    </div>
-  </div>
-</header>
-
-<div class="hero">
-  <div class="wrap">
-    <div>
-      <span class="badge">Onglet 3 · Origines</span>
-      <h1>Les origines du café</h1>
-      <p class="chapo">Le caféier pousse dans la « ceinture du café », entre le tropique du Cancer et celui du Capricorne. Plus de 70 pays en cultivent, chacun avec ses terroirs, ses variétés, ses procédés et sa signature aromatique.</p>
-      <div class="sommaire">
-        <a href="#terroir">Ce qui fait un terroir</a>
-        <a href="#marche">Marché mondial</a>
-        <a href="#pays">Pays producteurs</a>
-        <a href="#roue">Roue des arômes</a>
-        <a href="#regions">Profils par grande région</a>
-      </div>
-    </div>
-    <div class="visuel ratio-169">
-      <img data-img="img/tab3" alt="Carte stylisée de la ceinture du café">
-      <span class="repli">Image Grok n°4 — <code>img/tab3</code> (.webp/.jpg/.png) — 1920×1080</span>
-    </div>
-  </div>
+<div class="wrap">
+<a class="logo" href="index.html"><img alt="Logo A106" src="assets/logo.png"/><span>Connaissance du café</span></a>
+<div class="nav-droite">
+<nav class="onglets">
+<a href="preparation.html">Préparation</a>
+<a href="torrefaction.html">Torréfaction</a>
+<a class="actif" href="origines.html">Origines</a>
+<a class="second" href="materiel.html">Matériel</a>
+<a class="second" href="glossaire.html">Glossaire</a>
+</nav>
+<button aria-label="Changer de thème" class="theme-btn" type="button">☾</button>
 </div>
+</div>
+</header>
+<div class="hero">
+<div class="wrap">
+<div>
+<span class="badge">Onglet 3 · Origines</span>
 
+<div data-bloc="ORIG-01" data-p="chapo"></div>
+<div class="sommaire">
+<a href="#terroir">Ce qui fait un terroir</a>
+<a href="#marche">Marché mondial</a>
+<a href="#pays">Pays producteurs</a>
+<a href="#roue">Roue des arômes</a>
+<a href="#regions">Profils par grande région</a>
+</div>
+</div>
+<div class="visuel ratio-169">
+<img alt="Carte stylisée de la ceinture du café" data-img="img/tab3"/>
+<span class="repli">Image Grok n°4 — <code>img/tab3</code> (.webp/.jpg/.png) — 1920×1080</span>
+</div>
+</div>
+</div>
 <!-- ============ TERROIR ============ -->
 <section id="terroir">
-  <div class="wrap">
-    <h2>Ce qui fait un terroir</h2>
-    <p class="intro">Comme pour le vin, le goût d'un café dépend de son milieu autant que de sa plante.</p>
-    <div class="grille">
-      <div class="carte"><div class="ico">⛰️</div><h3>Altitude</h3><p>Plus on monte, plus les nuits sont fraîches et la maturation lente : le grain devient plus dense, plus acide et plus complexe. Les cafés « SHB » (Strictly Hard Bean) poussent au-dessus de 1 200 à 1 350 m selon les pays.</p></div>
-      <div class="carte"><div class="ico">🌋</div><h3>Sol</h3><p>Les sols volcaniques, riches en minéraux et bien drainés (Guatemala, Kenya, Kona, Java), sont parmi les plus réputés.</p></div>
-      <div class="carte"><div class="ico">🌦️</div><h3>Climat</h3><p>Idéalement 18 à 22 °C pour l'arabica (22 à 30 °C pour le robusta), des pluies régulières et une saison sèche marquée pour une floraison groupée.</p></div>
-      <div class="carte"><div class="ico">🧑‍🌾</div><h3>Savoir-faire</h3><p>Variétés choisies, cueillette sélective des cerises mûres, procédé post-récolte et soin du séchage : l'humain façonne largement la tasse.</p></div>
-    </div>
-  </div>
-</section>
+<div class="wrap">
 
+<div data-bloc="ORIG-02" data-p="intro"></div>
+<div class="grille">
+<div class="carte"><div class="ico">⛰️</div><div data-bloc="ORIG-03"></div></div>
+<div class="carte"><div class="ico">🌋</div><div data-bloc="ORIG-04"></div></div>
+<div class="carte"><div class="ico">🌦️</div><div data-bloc="ORIG-05"></div></div>
+<div class="carte"><div class="ico">🧑‍🌾</div><div data-bloc="ORIG-06"></div></div>
+</div>
+</div>
+</section>
 <!-- ============ MARCHE ============ -->
-<section id="marche" class="bleu motif">
-  <div class="wrap">
-    <h2>Le marché mondial</h2>
-    <p class="intro">Production mondiale 2025/26 estimée par l'USDA à environ <b>179 millions de sacs de 60 kg</b> (plus de 10 millions de tonnes). Pour 2026/27, l'USDA prévoit un record proche de 190 millions de sacs.</p>
-    <div class="grille deux">
-      <div class="carte">
-        <h3>Principaux producteurs (M sacs, 2025/26)</h3>
-        <div class="barres" id="barres"></div>
-        <p class="note">Source : USDA FAS, Coffee: World Markets and Trade (déc. 2025 et juin 2026). Les valeurs précédées de « ≈ » sont des ordres de grandeur à vérifier avant publication.</p>
-      </div>
-      <div class="carte">
-        <h3>Les grands équilibres</h3>
-        <ul>
-          <li><b>Brésil</b> : environ un tiers de la production mondiale. C'est le premier producteur d'arabica et un très gros producteur de robusta (conilon).</li>
-          <li><b>Vietnam</b> : deuxième producteur mondial, quasi exclusivement en robusta.</li>
-          <li><b>Colombie</b> : premier producteur d'arabica lavé.</li>
-          <li><b>Afrique de l'Est</b> (Éthiopie, Ouganda) : en forte croissance.</li>
-          <li>Le <b>café de spécialité</b> (note SCA ≥ 80/100) ne représente qu'une petite part des volumes, mais une part croissante de la valeur.</li>
-          <li>Les cours se fixent sur deux marchés : <b>New York</b> (arabica, « C price » en cents/lb) et <b>Londres</b> (robusta, en $/t). Ils ont atteint des sommets historiques en 2024–2025.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="bleu motif" id="marche">
+<div class="wrap">
 
+<div data-bloc="ORIG-07" data-p="intro"></div>
+<div class="grille deux">
+<div class="carte">
+<div data-bloc="ORIG-08"></div>
+<div class="barres" data-code="ORIG-BARRES" id="barres"></div>
+<div data-bloc="ORIG-09" data-p="note"></div>
+</div>
+<div class="carte">
+<div data-bloc="ORIG-10"></div>
+
+</div>
+</div>
+</div>
+</section>
 <!-- ============ PAYS ============ -->
 <section id="pays">
-  <div class="wrap">
-    <h2>Les pays producteurs</h2>
-    <p class="intro">Grands terroirs, particularités et arômes typiques. Filtrez par continent.</p>
-    <div class="filtres" id="filtres">
-      <button class="actif" data-f="tous">Tous</button>
-      <button data-f="amerique">Amériques</button>
-      <button data-f="afrique">Afrique & Péninsule arabique</button>
-      <button data-f="asie">Asie & Océanie</button>
-    </div>
-    <div class="grille" id="liste-pays"></div>
-  </div>
-</section>
+<div class="wrap">
 
+<div data-bloc="ORIG-11" data-p="intro"></div>
+<div class="filtres" id="filtres">
+<button class="actif" data-f="tous">Tous</button>
+<button data-f="amerique">Amériques</button>
+<button data-f="afrique">Afrique &amp; Péninsule arabique</button>
+<button data-f="asie">Asie &amp; Océanie</button>
+</div>
+<div class="grille" data-code="ORIG-PAYS" id="liste-pays"></div>
+</div>
+</section>
 <!-- ============ ROUE DES AROMES ============ -->
 <section id="roue">
-  <div class="wrap">
-    <h2>La roue des arômes</h2>
-    <p class="intro">Une roue simplifiée pour mettre des mots sur ce que l'on goûte. On part du centre (grande famille) vers l'extérieur (arômes précis). Cliquez sur un secteur.</p>
-    <div class="roue-zone">
-      <svg id="roue-svg" viewBox="-260 -260 520 520" role="img" aria-label="Roue des arômes du café"></svg>
-      <div class="roue-info" id="roue-info">
-        <h3>Comment l'utiliser ?</h3>
-        <p>Goûtez le café, d'abord chaud puis tiède. Repérez la grande famille (fruité, cacao, torréfié…), puis affinez vers l'extérieur.</p>
-        <p class="note">Les notes perçues dépendent de l'origine, du procédé, de la torréfaction et de la préparation.</p>
-      </div>
-    </div>
-  </div>
-</section>
+<div class="wrap">
 
+<div data-bloc="ORIG-12" data-p="intro"></div>
+<div class="roue-zone">
+<svg aria-label="Roue des arômes du café" id="roue-svg" role="img" viewBox="-260 -260 520 520"></svg>
+<div class="roue-info" id="roue-info">
+<div data-bloc="ORIG-13"></div>
+
+<div data-bloc="ORIG-14" data-p="note"></div>
+</div>
+</div>
+</div>
+</section>
 <!-- ============ REGIONS ============ -->
-<section id="regions" class="alt">
-  <div class="wrap">
-    <h2>Profils aromatiques par grande région</h2>
-    <div class="grille">
-      <div class="carte"><h3>🌎 Amérique centrale & du Sud</h3><p>Équilibre, sucrosité, notes de chocolat, de caramel et de fruits à coque. L'acidité, souvent pomme ou agrume, gagne en vivacité avec l'altitude. C'est la référence « classique ».</p></div>
-      <div class="carte"><h3>🌍 Afrique de l'Est</h3><p>Acidité éclatante, notes florales (jasmin, bergamote), agrumes, fruits rouges et noirs, parfois vineux. Les cafés les plus aromatiques et les plus surprenants.</p></div>
-      <div class="carte"><h3>🌏 Asie & Indonésie</h3><p>Corps lourd, faible acidité, notes terreuses, boisées, épicées, de tabac et de cacao. Robusta dominant en volume (Vietnam, Inde, Indonésie).</p></div>
-      <div class="carte"><h3>🏝️ Îles & cafés rares</h3><p>Jamaïque (Blue Mountain), Hawaï (Kona), Yémen, Sainte-Hélène, Galápagos : petits volumes, prix élevés, profils doux et souvent très recherchés.</p></div>
-    </div>
-  </div>
+<section class="alt" id="regions">
+<div class="wrap">
+<div data-bloc="ORIG-15"></div>
+<div class="grille">
+<div class="carte"><div data-bloc="ORIG-16"></div></div>
+<div class="carte"><div data-bloc="ORIG-17"></div></div>
+<div class="carte"><div data-bloc="ORIG-18"></div></div>
+<div class="carte"><div data-bloc="ORIG-19"></div></div>
+</div>
+</div>
 </section>
-
 <footer class="site">
-  <div class="wrap">
-    <span>© 2026 <b>Antoine ASCENSI</b> — cafe.ascensi.com</span>
-    <span><a href="preparation.html">Préparation</a> · <a href="torrefaction.html">Torréfaction</a> · <a href="origines.html">Origines</a> · <a href="materiel.html">Matériel</a> · <a href="glossaire.html">Glossaire</a></span>
-  </div>
+<div class="wrap">
+<span>© 2026 <b>Antoine ASCENSI</b> — cafe.ascensi.com</span>
+<span><a href="preparation.html">Préparation</a> · <a href="torrefaction.html">Torréfaction</a> · <a href="origines.html">Origines</a> · <a href="materiel.html">Matériel</a> · <a href="glossaire.html">Glossaire</a></span>
+</div>
 </footer>
 <script src="script.js"></script>
-
 <script>
+/* Les données sont lues dans contenu/origines.md (blocs ORIG-BARRES et ORIG-PAYS). */
+Contenu.pret.then(() => {
 /* ---------- Données : production (M sacs 60 kg, 2025/26) ---------- */
-const production = [
-  { pays: "Brésil", val: 63.0 },
-  { pays: "Vietnam", val: 31.7 },
-  { pays: "Colombie", val: 12.5 },
-  { pays: "Indonésie", val: 12.4 },
-  { pays: "Éthiopie", val: 8.5, approx: true },
-  { pays: "Ouganda", val: 6.5, approx: true },
-  { pays: "Inde", val: 6.0, approx: true },
-  { pays: "Honduras", val: 5.5, approx: true }
-];
-const max = production[0].val;
+const production = Contenu.liste('ORIG-BARRES').map(([p, v]) => ({
+  pays: p, approx: v.includes('≈'), val: parseFloat(v.replace('≈', '').replace(',', '.')) || 0 }));
+const max = Math.max(...production.map(p => p.val), 1);
 document.getElementById('barres').innerHTML = production.map(p => `
   <div class="barre">
-    <span>${p.pays}</span>
+    <span>${Contenu.inline(p.pays)}</span>
     <div class="piste"><div class="rempli" style="width:${(p.val / max * 100).toFixed(1)}%"></div></div>
     <span class="val">${p.approx ? '≈' : ''}${p.val.toString().replace('.', ',')}</span>
   </div>`).join('');
 
-/* ---------- Données : pays producteurs ----------
-   Pour ajouter un pays : copier un bloc { ... } et l'adapter. */
-const pays = [
-  // AMÉRIQUES
-  { nom: "Brésil", c: "amerique", espece: "Arabica + Robusta (conilon)", terroirs: "Sul de Minas, Cerrado Mineiro, Mogiana, Chapada Diamantina, Espírito Santo (robusta)",
-    texte: "Premier producteur mondial. Grandes exploitations souvent mécanisées, altitudes modérées, procédés nature et pulped natural. La base de nombreux assemblages espresso.",
-    aromes: ["chocolat", "noisette", "caramel", "faible acidité", "corps rond"] },
-  { nom: "Colombie", c: "amerique", espece: "Arabica", terroirs: "Huila, Nariño, Cauca, Tolima, Antioquia, Santander",
-    texte: "Premier producteur d'arabica lavé. Grâce à la géographie andine, on récolte presque toute l'année (récolte principale et « mitaca »). Petits producteurs, organisés autour de la Fédération nationale des caféiculteurs (FNC).",
-    aromes: ["caramel", "fruits rouges", "agrumes", "équilibré", "sucré"] },
-  { nom: "Guatemala", c: "amerique", espece: "Arabica", terroirs: "Antigua, Huehuetenango, Atitlán, Cobán, Fraijanes, Acatenango",
-    texte: "Volcans, altitude et microclimats variés. Huehuetenango, sans volcan, est réputé pour ses cafés vifs et fruités.",
-    aromes: ["chocolat noir", "épices", "acidité vive", "pomme", "fumé léger"] },
-  { nom: "Costa Rica", c: "amerique", espece: "Arabica", terroirs: "Tarrazú, West Valley, Central Valley, Tres Ríos, Brunca",
-    texte: "Pionnier de la qualité et des micro-moulins (micro-mills) qui ont popularisé les procédés honey. La culture du robusta y a longtemps été interdite.",
-    aromes: ["miel", "agrumes", "pêche", "propre", "brillant"] },
-  { nom: "Honduras", c: "amerique", espece: "Arabica", terroirs: "Marcala, Copán, Santa Bárbara, Opalaca, Montecillos",
-    texte: "Premier producteur d'Amérique centrale en volume, avec une qualité en forte progression et de nombreux lauréats de la Cup of Excellence.",
-    aromes: ["caramel", "fruits tropicaux", "chocolat au lait", "doux"] },
-  { nom: "Panama", c: "amerique", espece: "Arabica (dont Geisha)", terroirs: "Boquete, Volcán, Renacimiento (Chiriquí)",
-    texte: "Petits volumes, prestige mondial depuis la révélation du Geisha de l'Hacienda La Esmeralda en 2004. Les lots aux enchères atteignent des prix records.",
-    aromes: ["jasmin", "bergamote", "thé noir", "fruits à noyau", "très floral"] },
-  { nom: "Mexique", c: "amerique", espece: "Arabica", terroirs: "Chiapas, Veracruz, Oaxaca, Puebla",
-    texte: "Un grand producteur de café biologique et équitable, cultivé surtout par des petits producteurs et des communautés autochtones.",
-    aromes: ["chocolat", "noisette", "doux", "léger", "épices douces"] },
-  { nom: "Pérou", c: "amerique", espece: "Arabica", terroirs: "Cajamarca, Amazonas, San Martín, Junín, Cusco (Puno)",
-    texte: "Grand exportateur de café bio. Hautes altitudes andines, qualité en nette hausse.",
-    aromes: ["chocolat", "caramel", "agrumes doux", "floral léger"] },
-  { nom: "Salvador", c: "amerique", espece: "Arabica", terroirs: "Santa Ana, Apaneca-Ilamatepec, Chalatenango",
-    texte: "Berceau du Pacamara et réservoir de vieux Bourbon. Cafés doux et sucrés.",
-    aromes: ["sucre roux", "fruits rouges", "chocolat", "crémeux"] },
-  { nom: "Nicaragua", c: "amerique", espece: "Arabica", terroirs: "Jinotega, Matagalpa, Nueva Segovia",
-    texte: "Cafés d'ombrage, souvent biologiques ; Nueva Segovia donne des lots très fins.",
-    aromes: ["chocolat", "vanille", "poire", "doux"] },
-  { nom: "Jamaïque", c: "amerique", espece: "Arabica", terroirs: "Blue Mountains",
-    texte: "Appellation protégée « Jamaica Blue Mountain », expédiée en tonneaux de bois. Petite production, très exportée vers le Japon.",
-    aromes: ["doux", "équilibré", "peu d'amertume", "noisette"] },
-  { nom: "États-Unis (Hawaï)", c: "amerique", espece: "Arabica", terroirs: "Kona (Big Island), Kaʻū, Maui",
-    texte: "L'un des rares cafés produits dans un pays industrialisé. Sols volcaniques, coûts élevés, prix premium.",
-    aromes: ["doux", "noix de macadamia", "beurre", "fruité léger"] },
-
-  // AFRIQUE & PÉNINSULE ARABIQUE
-  { nom: "Éthiopie", c: "afrique", espece: "Arabica", terroirs: "Yirgacheffe, Sidama, Guji, Harrar, Limu, Jimma, Kaffa",
-    texte: "Berceau de l'arabica, où il pousse encore à l'état sauvage. Des milliers de variétés locales et une petite agriculture « jardin ». C'est le premier producteur africain et un grand consommateur.",
-    aromes: ["jasmin", "bergamote", "citron", "myrtille (nature)", "thé"] },
-  { nom: "Kenya", c: "afrique", espece: "Arabica", terroirs: "Nyeri, Kirinyaga, Murang'a, Kiambu, Embu",
-    texte: "Variétés SL28/SL34, procédé lavé à double fermentation, système d'enchères à Nairobi et calibrage AA / AB / PB (peaberry).",
-    aromes: ["cassis", "pamplemousse", "tomate", "acidité éclatante", "juteux"] },
-  { nom: "Rwanda", c: "afrique", espece: "Arabica (Bourbon)", terroirs: "Nyamasheke, Huye, lac Kivu, Gakenke",
-    texte: "Filière reconstruite autour des stations de lavage et de la qualité. Attention au « potato defect », un défaut rare mais connu.",
-    aromes: ["fruits rouges", "thé noir", "orange", "floral"] },
-  { nom: "Burundi", c: "afrique", espece: "Arabica (Bourbon)", terroirs: "Kayanza, Ngozi, Kirundo",
-    texte: "Profil proche du Rwanda : altitude élevée, petites exploitations, stations de lavage.",
-    aromes: ["fruits rouges", "agrumes", "sucre candi", "floral"] },
-  { nom: "Ouganda", c: "afrique", espece: "Robusta majoritaire + Arabica", terroirs: "Mont Elgon (Bugisu), Rwenzori, bassin du lac Victoria (robusta)",
-    texte: "Premier exportateur africain de café, berceau naturel d'une partie du robusta. Production record ces dernières années.",
-    aromes: ["chocolat", "fruits secs", "corps", "épices (arabica Bugisu)"] },
-  { nom: "Tanzanie", c: "afrique", espece: "Arabica + Robusta", terroirs: "Kilimandjaro, Arusha, Mbeya, Ruvuma",
-    texte: "Réputée pour ses peaberry (caracolis), grains ronds uniques dans la cerise.",
-    aromes: ["agrumes", "fruits noirs", "vif", "vineux"] },
-  { nom: "Yémen", c: "afrique", espece: "Arabica", terroirs: "Haraz, Bani Matar, Hayma, Saada",
-    texte: "Berceau historique du commerce du café, via le port de Moka. Terrasses arides, séchage nature, variétés anciennes. Volumes très faibles, prix élevés.",
-    aromes: ["fruits secs", "raisin", "épices", "vin", "chocolat"] },
-
-  // ASIE & OCÉANIE
-  { nom: "Vietnam", c: "asie", espece: "Robusta (~95 %)", terroirs: "Hauts-Plateaux du Centre : Đắk Lắk (Buôn Ma Thuột), Lâm Đồng, Gia Lai",
-    texte: "Deuxième producteur mondial et premier pour le robusta. Production intensive très productive. L'arabica pousse à Đà Lạt, et l'on y boit le cà phê sữa đá (café glacé au lait concentré).",
-    aromes: ["cacao amer", "céréales", "boisé", "corps puissant"] },
-  { nom: "Indonésie", c: "asie", espece: "Robusta majoritaire + Arabica", terroirs: "Sumatra (Mandheling, Gayo/Aceh), Java, Sulawesi (Toraja), Bali, Flores",
-    texte: "Voie semi-humide (giling basah) caractéristique. Java a donné son nom au café dans l'argot anglais. Le « kopi luwak » y est produit, avec de sérieuses questions éthiques.",
-    aromes: ["terreux", "boisé", "épices", "tabac", "faible acidité"] },
-  { nom: "Inde", c: "asie", espece: "Robusta + Arabica", terroirs: "Karnataka (Chikmagalur, Coorg), Kerala, Tamil Nadu",
-    texte: "Café cultivé sous ombrage, en mélange avec poivre et épices. Spécialité : le « Monsooned Malabar », un grain exposé aux vents de mousson.",
-    aromes: ["épices", "cacao", "faible acidité", "corps", "boisé (Monsooned)"] },
-  { nom: "Papouasie-Nouvelle-Guinée", c: "asie", espece: "Arabica", terroirs: "Eastern Highlands, Western Highlands (Mont Hagen)",
-    texte: "Petites exploitations familiales (« garden coffee ») à haute altitude.",
-    aromes: ["fruits tropicaux", "chocolat", "herbes", "doux"] },
-  { nom: "Chine", c: "asie", espece: "Arabica (Catimor)", terroirs: "Yunnan (Pu'er, Baoshan)",
-    texte: "Production en essor rapide, qualité en progression et consommation intérieure en forte croissance.",
-    aromes: ["sucre brun", "fruits secs", "herbes", "doux"] }
-];
+/* ---------- Données : pays producteurs (bloc ORIG-PAYS de contenu/origines.md) ---------- */
+const continents = { am: 'amerique', af: 'afrique', as: 'asie' };
+const pays = Contenu.fiches('ORIG-PAYS').map(f => ({
+  nom: f.titreHtml,
+  c: continents[(f.champs['Continent'] || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').slice(0, 2)] || 'asie',
+  espece: Contenu.inline(f.champs['Espèce'] || ''),
+  terroirs: Contenu.inline(f.champs['Terroirs'] || ''),
+  texte: f.texte,
+  aromes: (f.champs['Arômes'] || '').split(',').map(x => Contenu.inline(x.trim())).filter(Boolean)
+}));
 
 const liste = document.getElementById('liste-pays');
 function rendre(filtre) {
@@ -264,6 +172,7 @@ document.getElementById('filtres').addEventListener('click', e => {
   rendre(b.dataset.f);
 });
 rendre('tous');
+});
 
 /* ---------- Roue des arômes ---------- */
 const roue = [

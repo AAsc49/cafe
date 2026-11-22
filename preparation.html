@@ -1,294 +1,233 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Préparation du café — méthodes, ratios, TDS</title>
-<meta name="description" content="Toutes les méthodes de préparation du café : ratios, mouture, température, temps d'infusion, TDS et extraction.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-<link rel="icon" href="assets/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" href="assets/favicon.png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<meta name="author" content="Antoine ASCENSI">
+<meta content="Toutes les méthodes de préparation du café : ratios, mouture, température, temps d'infusion, TDS et extraction." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&amp;family=Nunito:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="assets/favicon.ico" rel="icon" sizes="any"/>
+<link href="assets/favicon.png" rel="icon" type="image/png"/>
+<link href="assets/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="Antoine ASCENSI" name="author"/>
 <script>try{var t=localStorage.getItem('theme');if(t==='sombre'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.dataset.theme='sombre';}catch(e){}</script>
-<link rel="stylesheet" href="style.css">
+<link href="style.css" rel="stylesheet"/>
 </head>
-<body>
-
+<body data-contenu="contenu/preparation.md">
 <header class="site">
-  <div class="wrap">
-    <a class="logo" href="index.html"><img src="assets/logo.png" alt="Logo A106"><span>Connaissance du café</span></a>
-    <div class="nav-droite">
-      <nav class="onglets">
-        <a href="preparation.html" class="actif">Préparation</a>
-        <a href="torrefaction.html">Torréfaction</a>
-        <a href="origines.html">Origines</a>
-        <a href="materiel.html" class="second">Matériel</a>
-        <a href="glossaire.html" class="second">Glossaire</a>
-      </nav>
-      <button class="theme-btn" type="button" aria-label="Changer de thème">☾</button>
-    </div>
-  </div>
-</header>
-
-<div class="hero">
-  <div class="wrap">
-    <div>
-      <span class="badge">Onglet 1 · Préparation</span>
-      <h1>Les méthodes de préparation</h1>
-      <p class="chapo">Chaque méthode extrait le café différemment : par percolation, par immersion, sous pression ou à froid. Voici les réglages de départ à connaître, puis à ajuster selon le grain et le goût.</p>
-      <div class="sommaire">
-        <a href="#fondamentaux">Les fondamentaux</a>
-        <a href="#comparatif">Tableau comparatif</a>
-        <a href="#methodes">Fiches méthodes</a>
-        <a href="#calculateur">Calculateur</a>
-        <a href="#tds">TDS & extraction</a>
-        <a href="#eau">L'eau</a>
-      </div>
-    </div>
-    <div class="visuel ratio-32">
-      <img data-img="img/tab1" alt="Matériel de préparation du café vu du dessus">
-      <span class="repli">Image Grok n°2 — <code>img/tab1</code> (.webp/.jpg/.png) — 1600×1067</span>
-    </div>
-  </div>
+<div class="wrap">
+<a class="logo" href="index.html"><img alt="Logo A106" src="assets/logo.png"/><span>Connaissance du café</span></a>
+<div class="nav-droite">
+<nav class="onglets">
+<a class="actif" href="preparation.html">Préparation</a>
+<a href="torrefaction.html">Torréfaction</a>
+<a href="origines.html">Origines</a>
+<a class="second" href="materiel.html">Matériel</a>
+<a class="second" href="glossaire.html">Glossaire</a>
+</nav>
+<button aria-label="Changer de thème" class="theme-btn" type="button">☾</button>
 </div>
+</div>
+</header>
+<div class="hero">
+<div class="wrap">
+<div>
+<span class="badge">Onglet 1 · Préparation</span>
 
+<div data-bloc="PREP-01" data-p="chapo"></div>
+<div class="sommaire">
+<a href="#fondamentaux">Les fondamentaux</a>
+<a href="#comparatif">Tableau comparatif</a>
+<a href="#methodes">Fiches méthodes</a>
+<a href="#calculateur">Calculateur</a>
+<a href="#tds">TDS &amp; extraction</a>
+<a href="#eau">L'eau</a>
+</div>
+</div>
+<div class="visuel ratio-32">
+<img alt="Matériel de préparation du café vu du dessus" data-img="img/tab1"/>
+<span class="repli">Image Grok n°2 — <code>img/tab1</code> (.webp/.jpg/.png) — 1600×1067</span>
+</div>
+</div>
+</div>
 <!-- ============ FONDAMENTAUX ============ -->
 <section id="fondamentaux">
-  <div class="wrap">
-    <h2>Les fondamentaux de l'extraction</h2>
-    <p class="intro">Quatre variables principales pilotent toute préparation. Quand on ajuste, on ne change qu'un paramètre à la fois.</p>
-    <div class="grille">
-      <div class="carte"><div class="ico">⚖️</div><h3>Le ratio</h3><p>Rapport entre la masse de café et la masse d'eau (ou de boisson pour l'espresso). Un ratio 1:16 = 1 g de café pour 16 g d'eau. On pèse, on ne mesure pas à la cuillère.</p></div>
-      <div class="carte"><div class="ico">⚙️</div><h3>La mouture</h3><p>Plus elle est fine, plus la surface de contact est grande et l'extraction rapide. Trop fine : amertume, astringence. Trop grossière : acidité aigre, café creux. Un moulin à meules est indispensable.</p></div>
-      <div class="carte"><div class="ico">🌡️</div><h3>La température</h3><p>De 90 à 96 °C pour la plupart des méthodes à chaud. Plus chaud = extraction plus poussée. Torréfaction claire → eau plus chaude ; torréfaction foncée → eau un peu moins chaude.</p></div>
-      <div class="carte"><div class="ico">⏱️</div><h3>Le temps</h3><p>Durée de contact entre l'eau et le café : 25 à 30 s pour un espresso, 2 à 4 min pour un filtre, 4 min pour un piston, 12 à 24 h pour un cold brew.</p></div>
-    </div>
-    <div class="grille" style="margin-top:22px">
-      <div class="carte"><h3>Les familles de méthodes</h3>
-        <p><span class="tag">Percolation</span> l'eau traverse le lit de café par gravité (V60, Chemex, Kalita, filtre).</p>
-        <p><span class="tag immersion">Immersion</span> le café trempe dans l'eau puis est filtré (piston, Clever, siphon, AeroPress).</p>
-        <p><span class="tag pression">Pression</span> l'eau est poussée sous pression (espresso ~9 bar, moka ~1 à 1,5 bar).</p>
-        <p><span class="tag froid">À froid</span> extraction longue sans chaleur (cold brew, cold drip).</p>
-      </div>
-      <div class="carte"><h3>Le diagnostic en tasse</h3>
-        <ul>
-          <li><b>Acide, salé, creux, court</b> → sous-extrait : mouture plus fine, eau plus chaude ou temps plus long.</li>
-          <li><b>Amer, sec, astringent</b> → sur-extrait : mouture plus grossière, eau moins chaude ou temps plus court.</li>
-          <li><b>Trop fort / trop léger</b> → c'est la concentration : on corrige le ratio, pas la mouture.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+<div class="wrap">
 
+<div data-bloc="PREP-02" data-p="intro"></div>
+<div class="grille">
+<div class="carte"><div class="ico">⚖️</div><div data-bloc="PREP-03"></div></div>
+<div class="carte"><div class="ico">⚙️</div><div data-bloc="PREP-04"></div></div>
+<div class="carte"><div class="ico">🌡️</div><div data-bloc="PREP-05"></div></div>
+<div class="carte"><div class="ico">⏱️</div><div data-bloc="PREP-06"></div></div>
+</div>
+<div class="grille" style="margin-top:22px">
+<div class="carte"><div data-bloc="PREP-07"></div>
+
+
+
+
+</div>
+<div class="carte"><div data-bloc="PREP-08"></div>
+
+</div>
+</div>
+</div>
+</section>
 <!-- ============ COMPARATIF ============ -->
-<section id="comparatif" class="alt">
-  <div class="wrap">
-    <h2>Tableau comparatif des méthodes</h2>
-    <p class="intro">Valeurs de départ couramment admises (recommandations SCA et usages des baristas). Elles se règlent ensuite au goût.</p>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr><th>Méthode</th><th>Famille</th><th>Ratio</th><th>Exemple</th><th>Mouture</th><th>Eau</th><th>Temps</th><th>TDS visé</th></tr>
-        </thead>
-        <tbody>
-          <tr><td><b>Espresso</b></td><td>Pression</td><td>1:2 (boisson)</td><td>18 g → 36 g</td><td>Fine</td><td>90–94 °C</td><td>25–30 s</td><td>8–12 %</td></tr>
-          <tr><td><b>Ristretto</b></td><td>Pression</td><td>1:1 à 1:1,5</td><td>18 g → 22 g</td><td>Fine</td><td>90–94 °C</td><td>15–20 s</td><td>12–15 %</td></tr>
-          <tr><td><b>Lungo</b></td><td>Pression</td><td>1:3 à 1:4</td><td>18 g → 60 g</td><td>Fine à moyenne-fine</td><td>90–94 °C</td><td>35–45 s</td><td>5–7 %</td></tr>
-          <tr><td><b>V60</b></td><td>Percolation</td><td>1:15 à 1:17</td><td>15 g / 250 g</td><td>Moyenne-fine</td><td>92–96 °C</td><td>2 min 30–3 min 30</td><td>1,15–1,45 %</td></tr>
-          <tr><td><b>Kalita Wave</b></td><td>Percolation</td><td>1:16</td><td>20 g / 320 g</td><td>Moyenne</td><td>92–96 °C</td><td>3–4 min</td><td>1,15–1,40 %</td></tr>
-          <tr><td><b>Chemex</b></td><td>Percolation</td><td>1:16 à 1:17</td><td>30 g / 500 g</td><td>Moyenne-grossière</td><td>93–96 °C</td><td>4–5 min</td><td>1,15–1,35 %</td></tr>
-          <tr><td><b>Filtre électrique</b></td><td>Percolation</td><td>1:16 à 1:17</td><td>60 g / 1 L</td><td>Moyenne</td><td>92–96 °C</td><td>4–6 min</td><td>1,15–1,35 %</td></tr>
-          <tr><td><b>Piston (French press)</b></td><td>Immersion</td><td>1:15 à 1:16</td><td>30 g / 480 g</td><td>Grossière</td><td>93–96 °C</td><td>4 min</td><td>1,20–1,50 %</td></tr>
-          <tr><td><b>Clever Dripper</b></td><td>Immersion</td><td>1:16</td><td>18 g / 290 g</td><td>Moyenne</td><td>92–96 °C</td><td>3–4 min</td><td>1,20–1,40 %</td></tr>
-          <tr><td><b>AeroPress</b></td><td>Immersion + pression</td><td>1:12 à 1:16</td><td>15 g / 220 g</td><td>Fine à moyenne</td><td>80–92 °C</td><td>1 min 30–2 min 30</td><td>1,25–1,60 %</td></tr>
-          <tr><td><b>Siphon</b></td><td>Immersion</td><td>1:15</td><td>20 g / 300 g</td><td>Moyenne</td><td>~92 °C</td><td>1 min–1 min 30 de contact</td><td>1,20–1,40 %</td></tr>
-          <tr><td><b>Moka (cafetière italienne)</b></td><td>Pression légère</td><td>~1:7 à 1:10</td><td>18 g / 150 g</td><td>Moyenne-fine</td><td>Eau préchauffée</td><td>4–5 min</td><td>3–5 %</td></tr>
-          <tr><td><b>Café turc (cezve/ibrik)</b></td><td>Décoction</td><td>1:10 à 1:12</td><td>7 g / 70 g</td><td>Extra-fine (poudre)</td><td>Jusqu'à la mousse, sans bouillir</td><td>2–3 min</td><td>—</td></tr>
-          <tr><td><b>Cold brew</b></td><td>À froid</td><td>1:5 à 1:8 (concentré)</td><td>100 g / 700 g</td><td>Grossière</td><td>Froide / ambiante</td><td>12–24 h</td><td>Selon dilution</td></tr>
-          <tr><td><b>Cold drip (goutte à goutte)</b></td><td>À froid</td><td>1:10</td><td>50 g / 500 g</td><td>Moyenne</td><td>Eau glacée</td><td>3–8 h</td><td>—</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="note">Ratio espresso : rapport café moulu / boisson en tasse. Autres méthodes : rapport café / eau versée. TDS : indicatif, mesuré au réfractomètre.</p>
-  </div>
-</section>
+<section class="alt" id="comparatif">
+<div class="wrap">
 
+<div data-bloc="PREP-09" data-p="intro"></div>
+<div class="table-wrap">
+<div data-bloc="PREP-10"></div>
+</div>
+<div data-bloc="PREP-11" data-p="note"></div>
+</div>
+</section>
 <!-- ============ FICHES ============ -->
 <section id="methodes">
-  <div class="wrap">
-    <h2>Fiches méthodes</h2>
-    <p class="intro">Les gestes clés de chaque méthode, ce qu'on obtient en tasse et les erreurs fréquentes.</p>
-    <div class="grille deux">
+<div class="wrap">
 
-      <article class="carte fiche">
-        <span class="tag pression">Pression</span>
-        <h3>Espresso</h3>
-        <p>De l'eau chaude poussée à environ 9 bar à travers une galette de café tassé. On obtient une boisson concentrée et sirupeuse, coiffée d'une crema.</p>
-        <dl><dt>Dose</dt><dd>16–20 g (panier double)</dd><dt>Rendement</dt><dd>~2× la dose en boisson</dd><dt>Temps</dt><dd>25–30 s</dd><dt>Clé</dt><dd>Distribution homogène, tassage régulier, mouture réglée au chrono</dd></dl>
-      </article>
+<div data-bloc="PREP-12" data-p="intro"></div>
+<div class="grille deux">
+<article class="carte fiche">
+<span class="tag pression">Pression</span>
+<div data-bloc="PREP-13"></div>
 
-      <article class="carte fiche">
-        <span class="tag">Percolation</span>
-        <h3>V60 (Hario)</h3>
-        <p>Cône à grande ouverture et nervures en spirale : le débit dépend surtout de la façon de verser. On obtient un café clair et aromatique, qui met bien en valeur les cafés de spécialité.</p>
-        <dl><dt>Pré-infusion</dt><dd>2× la dose d'eau, 30–45 s (bloom)</dd><dt>Versement</dt><dd>En spirale, par paliers ou en continu</dd><dt>Clé</dt><dd>Bouilloire col de cygne, rincer le filtre papier</dd></dl>
-      </article>
 
-      <article class="carte fiche">
-        <span class="tag">Percolation</span>
-        <h3>Chemex</h3>
-        <p>Carafe en verre avec un filtre papier épais qui retient les huiles et les fines. On obtient une tasse très nette et légère.</p>
-        <dl><dt>Dose</dt><dd>30 g pour 500 g</dd><dt>Mouture</dt><dd>Plus grossière qu'un V60 (filtre lent)</dd><dt>Clé</dt><dd>Face triple du filtre côté bec verseur</dd></dl>
-      </article>
+</article>
+<article class="carte fiche">
+<span class="tag">Percolation</span>
+<div data-bloc="PREP-14"></div>
 
-      <article class="carte fiche">
-        <span class="tag">Percolation</span>
-        <h3>Kalita Wave</h3>
-        <p>Fond plat à trois trous : l'extraction est plus homogène et pardonne davantage les variations de versement. On obtient une tasse équilibrée et ronde.</p>
-        <dl><dt>Ratio</dt><dd>1:16</dd><dt>Versement</dt><dd>Paliers réguliers de 50 g</dd><dt>Clé</dt><dd>Garder un niveau d'eau constant</dd></dl>
-      </article>
 
-      <article class="carte fiche">
-        <span class="tag immersion">Immersion</span>
-        <h3>Piston (French press)</h3>
-        <p>Le café infuse puis un filtre métallique le sépare du marc. On obtient une boisson ronde, avec du corps et des huiles, et un peu de dépôt.</p>
-        <dl><dt>Temps</dt><dd>4 min, puis casser la croûte et écumer</dd><dt>Mouture</dt><dd>Grossière (gros sel)</dd><dt>Clé</dt><dd>Presser doucement, servir aussitôt</dd></dl>
-      </article>
+</article>
+<article class="carte fiche">
+<span class="tag">Percolation</span>
+<div data-bloc="PREP-15"></div>
 
-      <article class="carte fiche">
-        <span class="tag immersion">Immersion</span> <span class="tag pression">Pression</span>
-        <h3>AeroPress</h3>
-        <p>Une seringue géante : infusion courte puis pression manuelle à travers un filtre papier ou métal. Très polyvalente, de l'« espresso-like » au filtre léger.</p>
-        <dl><dt>Dose</dt><dd>11–18 g</dd><dt>Variante</dt><dd>Méthode classique ou inversée</dd><dt>Clé</dt><dd>Pression lente, 20–30 s</dd></dl>
-      </article>
 
-      <article class="carte fiche">
-        <span class="tag pression">Pression légère</span>
-        <h3>Moka (cafetière italienne)</h3>
-        <p>La vapeur pousse l'eau du réservoir à travers le café. On obtient un café corsé et intense, proche d'un espresso allongé.</p>
-        <dl><dt>Eau</dt><dd>Chaude, juste sous la soupape</dd><dt>Mouture</dt><dd>Moyenne-fine, sans tasser</dd><dt>Clé</dt><dd>Feu doux, retirer dès le premier glouglou</dd></dl>
-      </article>
+</article>
+<article class="carte fiche">
+<span class="tag">Percolation</span>
+<div data-bloc="PREP-16"></div>
 
-      <article class="carte fiche">
-        <span class="tag immersion">Immersion</span>
-        <h3>Siphon</h3>
-        <p>Deux ballons : la vapeur fait monter l'eau dans le ballon supérieur, le café y infuse, puis tout redescend en se filtrant au retrait de la chaleur. On obtient une tasse très claire et aromatique.</p>
-        <dl><dt>Contact</dt><dd>60–90 s</dd><dt>Filtre</dt><dd>Tissu ou papier</dd><dt>Clé</dt><dd>Remuer délicatement, couper la chaleur à temps</dd></dl>
-      </article>
 
-      <article class="carte fiche">
-        <span class="tag immersion">Décoction</span>
-        <h3>Café turc</h3>
-        <p>Café en poudre, eau et éventuellement sucre chauffés ensemble dans un cezve, servis non filtrés. On obtient une boisson épaisse et intense, avec du marc au fond de la tasse.</p>
-        <dl><dt>Mouture</dt><dd>La plus fine possible</dd><dt>Clé</dt><dd>Chauffer doucement, retirer avant ébullition, garder la mousse</dd></dl>
-      </article>
+</article>
+<article class="carte fiche">
+<span class="tag immersion">Immersion</span>
+<div data-bloc="PREP-17"></div>
 
-      <article class="carte fiche">
-        <span class="tag froid">À froid</span>
-        <h3>Cold brew</h3>
-        <p>Longue infusion à froid puis filtration. On obtient un concentré doux, peu acide et chocolaté, à diluer avec de l'eau ou du lait.</p>
-        <dl><dt>Temps</dt><dd>12–24 h au réfrigérateur</dd><dt>Dilution</dt><dd>1 volume de concentré pour 1 à 2 d'eau</dd><dt>Conservation</dt><dd>~1 semaine au frais</dd></dl>
-      </article>
 
-    </div>
-  </div>
+</article>
+<article class="carte fiche">
+<span class="tag immersion">Immersion</span> <span class="tag pression">Pression</span>
+<div data-bloc="PREP-18"></div>
+
+
+</article>
+<article class="carte fiche">
+<span class="tag pression">Pression légère</span>
+<div data-bloc="PREP-19"></div>
+
+
+</article>
+<article class="carte fiche">
+<span class="tag immersion">Immersion</span>
+<div data-bloc="PREP-20"></div>
+
+
+</article>
+<article class="carte fiche">
+<span class="tag immersion">Décoction</span>
+<div data-bloc="PREP-21"></div>
+
+
+</article>
+<article class="carte fiche">
+<span class="tag froid">À froid</span>
+<div data-bloc="PREP-22"></div>
+
+
+</article>
+</div>
+</div>
 </section>
-
 <!-- ============ CALCULATEUR ============ -->
-<section id="calculateur" class="bleu motif">
-  <div class="wrap">
-    <h2>Calculateur de recette</h2>
-    <p class="intro">Choisissez une méthode et une dose : on calcule la quantité d'eau (ou de boisson pour l'espresso).</p>
-    <div class="carte">
-      <div class="calc">
-        <div>
-          <label for="methode">Méthode</label>
-          <select id="methode">
-            <option value="2">Espresso (1:2)</option>
-            <option value="16" selected>V60 (1:16)</option>
-            <option value="16.5">Chemex (1:16,5)</option>
-            <option value="16">Kalita Wave (1:16)</option>
-            <option value="15">Piston (1:15)</option>
-            <option value="14">AeroPress (1:14)</option>
-            <option value="8">Moka (1:8)</option>
-            <option value="7">Cold brew concentré (1:7)</option>
-          </select>
-        </div>
-        <div>
-          <label for="ratio">Ratio 1:</label>
-          <input id="ratio" type="number" min="1" max="25" step="0.5" value="16">
-        </div>
-        <div>
-          <label for="dose">Café (g)</label>
-          <input id="dose" type="number" min="1" max="200" step="0.5" value="15">
-        </div>
-        <div class="resultat" id="resultat"></div>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="bleu motif" id="calculateur">
+<div class="wrap">
 
+<div data-bloc="PREP-23" data-p="intro"></div>
+<div class="carte">
+<div class="calc">
+<div>
+<label for="methode">Méthode</label>
+<select id="methode">
+<option value="2">Espresso (1:2)</option>
+<option selected="" value="16">V60 (1:16)</option>
+<option value="16.5">Chemex (1:16,5)</option>
+<option value="16">Kalita Wave (1:16)</option>
+<option value="15">Piston (1:15)</option>
+<option value="14">AeroPress (1:14)</option>
+<option value="8">Moka (1:8)</option>
+<option value="7">Cold brew concentré (1:7)</option>
+</select>
+</div>
+<div>
+<label for="ratio">Ratio 1:</label>
+<input id="ratio" max="25" min="1" step="0.5" type="number" value="16"/>
+</div>
+<div>
+<label for="dose">Café (g)</label>
+<input id="dose" max="200" min="1" step="0.5" type="number" value="15"/>
+</div>
+<div class="resultat" id="resultat"></div>
+</div>
+</div>
+</div>
+</section>
 <!-- ============ TDS ============ -->
 <section id="tds">
-  <div class="wrap">
-    <h2>TDS et taux d'extraction</h2>
-    <p class="intro">Deux mesures permettent d'objectiver une tasse, à condition d'avoir un réfractomètre.</p>
-    <div class="grille deux">
-      <div class="carte">
-        <h3>TDS — la concentration</h3>
-        <p><b>Total Dissolved Solids</b> : part de matières dissoutes dans la boisson, en %. Elle traduit la force perçue.</p>
-        <ul>
-          <li>Filtre : <b>1,15 à 1,45 %</b> (la zone « gold cup » de la SCA est 1,15–1,35 %)</li>
-          <li>Espresso : <b>8 à 12 %</b></li>
-        </ul>
-      </div>
-      <div class="carte">
-        <h3>Extraction — le rendement</h3>
-        <p>Part de la masse de café moulu effectivement dissoute dans l'eau. Elle traduit l'équilibre gustatif.</p>
-        <p style="background:var(--bleu-pale);padding:12px;border-radius:12px;font-family:Fredoka,sans-serif">Extraction (%) = TDS (%) × masse de boisson (g) ÷ dose de café (g)</p>
-        <ul>
-          <li>Cible usuelle : <b>18 à 22 %</b></li>
-          <li>Exemple : TDS 1,35 % × 230 g ÷ 15 g = <b>20,7 %</b></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+<div class="wrap">
 
+<div data-bloc="PREP-24" data-p="intro"></div>
+<div class="grille deux">
+<div class="carte">
+<div data-bloc="PREP-25"></div>
+
+
+</div>
+<div class="carte">
+<div data-bloc="PREP-26"></div>
+
+
+
+</div>
+</div>
+</div>
+</section>
 <!-- ============ EAU ============ -->
-<section id="eau" class="alt">
-  <div class="wrap">
-    <h2>L'eau, ingrédient principal</h2>
-    <p class="intro">Repères de la norme SCA pour l'eau de préparation. Une eau en bouteille faiblement minéralisée, ou une eau du robinet filtrée, s'en approche souvent.</p>
-    <div class="table-wrap">
-      <table style="min-width:520px">
-        <thead><tr><th>Paramètre</th><th>Cible</th><th>Plage acceptable</th></tr></thead>
-        <tbody>
-          <tr><td>Résidu sec (TDS de l'eau)</td><td>150 mg/L</td><td>75–250 mg/L</td></tr>
-          <tr><td>Dureté calcique</td><td>68 mg/L (CaCO₃)</td><td>17–85 mg/L</td></tr>
-          <tr><td>Alcalinité totale</td><td>40 mg/L</td><td>autour de 40 mg/L</td></tr>
-          <tr><td>pH</td><td>7</td><td>6,5–7,5</td></tr>
-          <tr><td>Sodium</td><td>10 mg/L</td><td>le plus bas possible</td></tr>
-          <tr><td>Chlore</td><td>0</td><td>aucun (goût et odeur)</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="note">Une eau trop dure entartre la machine et alourdit la tasse. Une eau trop douce (osmosée pure) extrait mal et peut corroder les chaudières.</p>
-  </div>
-</section>
+<section class="alt" id="eau">
+<div class="wrap">
 
+<div data-bloc="PREP-27" data-p="intro"></div>
+<div class="table-wrap">
+<div data-bloc="PREP-28"></div>
+</div>
+<div data-bloc="PREP-29" data-p="note"></div>
+</div>
+</section>
 <footer class="site">
-  <div class="wrap">
-    <span>© 2026 <b>Antoine ASCENSI</b> — cafe.ascensi.com</span>
-    <span><a href="preparation.html">Préparation</a> · <a href="torrefaction.html">Torréfaction</a> · <a href="origines.html">Origines</a> · <a href="materiel.html">Matériel</a> · <a href="glossaire.html">Glossaire</a></span>
-  </div>
+<div class="wrap">
+<span>© 2026 <b>Antoine ASCENSI</b> — cafe.ascensi.com</span>
+<span><a href="preparation.html">Préparation</a> · <a href="torrefaction.html">Torréfaction</a> · <a href="origines.html">Origines</a> · <a href="materiel.html">Matériel</a> · <a href="glossaire.html">Glossaire</a></span>
+</div>
 </footer>
 <script src="script.js"></script>
-
 <script>
   const methode = document.getElementById('methode');
   const ratio = document.getElementById('ratio');

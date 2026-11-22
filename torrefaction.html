@@ -1,214 +1,184 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Torréfaction du café — grains, phases, degrés</title>
-<meta name="description" content="Espèces et variétés de café, procédés post-récolte, phases de la torréfaction, températures, temps de chauffe et degrés de torréfaction.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-<link rel="icon" href="assets/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" href="assets/favicon.png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<meta name="author" content="Antoine ASCENSI">
+<meta content="Espèces et variétés de café, procédés post-récolte, phases de la torréfaction, températures, temps de chauffe et degrés de torréfaction." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&amp;family=Nunito:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="assets/favicon.ico" rel="icon" sizes="any"/>
+<link href="assets/favicon.png" rel="icon" type="image/png"/>
+<link href="assets/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="Antoine ASCENSI" name="author"/>
 <script>try{var t=localStorage.getItem('theme');if(t==='sombre'||(!t&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.dataset.theme='sombre';}catch(e){}</script>
-<link rel="stylesheet" href="style.css">
+<link href="style.css" rel="stylesheet"/>
 </head>
-<body>
-
+<body data-contenu="contenu/torrefaction.md">
 <header class="site">
-  <div class="wrap">
-    <a class="logo" href="index.html"><img src="assets/logo.png" alt="Logo A106"><span>Connaissance du café</span></a>
-    <div class="nav-droite">
-      <nav class="onglets">
-        <a href="preparation.html">Préparation</a>
-        <a href="torrefaction.html" class="actif">Torréfaction</a>
-        <a href="origines.html">Origines</a>
-        <a href="materiel.html" class="second">Matériel</a>
-        <a href="glossaire.html" class="second">Glossaire</a>
-      </nav>
-      <button class="theme-btn" type="button" aria-label="Changer de thème">☾</button>
-    </div>
-  </div>
-</header>
-
-<div class="hero">
-  <div class="wrap">
-    <div>
-      <span class="badge">Onglet 2 · Torréfaction</span>
-      <h1>Du grain vert au grain torréfié</h1>
-      <p class="chapo">La torréfaction transforme un grain vert, dur et herbacé en un grain friable qui porte plus de 800 composés aromatiques. Tout se joue sur la chaleur, le temps et le moment où l'on arrête.</p>
-      <div class="sommaire">
-        <a href="#especes">Espèces</a>
-        <a href="#varietes">Variétés</a>
-        <a href="#procedes">Procédés</a>
-        <a href="#phases">Phases</a>
-        <a href="#degres">Degrés</a>
-        <a href="#pilotage">Pilotage</a>
-        <a href="#repos">Repos & conservation</a>
-      </div>
-    </div>
-    <div class="visuel ratio-169">
-      <img data-img="img/tab2" alt="Dégradé de grains de café du vert au torréfié foncé">
-      <span class="repli">Image Grok n°3 — <code>img/tab2</code> (.webp/.jpg/.png) — 1600×900</span>
-    </div>
-  </div>
+<div class="wrap">
+<a class="logo" href="index.html"><img alt="Logo A106" src="assets/logo.png"/><span>Connaissance du café</span></a>
+<div class="nav-droite">
+<nav class="onglets">
+<a href="preparation.html">Préparation</a>
+<a class="actif" href="torrefaction.html">Torréfaction</a>
+<a href="origines.html">Origines</a>
+<a class="second" href="materiel.html">Matériel</a>
+<a class="second" href="glossaire.html">Glossaire</a>
+</nav>
+<button aria-label="Changer de thème" class="theme-btn" type="button">☾</button>
 </div>
+</div>
+</header>
+<div class="hero">
+<div class="wrap">
+<div>
+<span class="badge">Onglet 2 · Torréfaction</span>
 
+<div data-bloc="TORR-01" data-p="chapo"></div>
+<div class="sommaire">
+<a href="#especes">Espèces</a>
+<a href="#varietes">Variétés</a>
+<a href="#procedes">Procédés</a>
+<a href="#phases">Phases</a>
+<a href="#degres">Degrés</a>
+<a href="#pilotage">Pilotage</a>
+<a href="#repos">Repos &amp; conservation</a>
+</div>
+</div>
+<div class="visuel ratio-169">
+<img alt="Dégradé de grains de café du vert au torréfié foncé" data-img="img/tab2"/>
+<span class="repli">Image Grok n°3 — <code>img/tab2</code> (.webp/.jpg/.png) — 1600×900</span>
+</div>
+</div>
+</div>
 <!-- ============ ESPECES ============ -->
 <section id="especes">
-  <div class="wrap">
-    <h2>Les espèces de caféier</h2>
-    <p class="intro">Il existe plus d'une centaine d'espèces de <i>Coffea</i>, mais deux d'entre elles représentent la quasi-totalité du café consommé.</p>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Espèce</th><th>Part de la production</th><th>Altitude</th><th>Caféine</th><th>Profil en tasse</th><th>Usages</th></tr></thead>
-        <tbody>
-          <tr><td><b>Arabica</b> (<i>C. arabica</i>)</td><td>~55–60 %</td><td>800–2 200 m</td><td>1,0–1,5 %</td><td>Acidité, complexité, notes florales et fruitées, sucrosité</td><td>Cafés de spécialité, filtre, espresso</td></tr>
-          <tr><td><b>Robusta</b> (<i>C. canephora</i>)</td><td>~40–45 %</td><td>0–800 m</td><td>2,0–2,7 %</td><td>Corps, amertume, notes boisées, céréales, cacao amer, peu d'acidité</td><td>Assemblages espresso, solubles, crema</td></tr>
-          <tr><td><b>Liberica</b> (<i>C. liberica</i>)</td><td>&lt; 2 %</td><td>Basse altitude</td><td>~1,2–1,5 %</td><td>Fumé, boisé, fruits très mûrs, atypique</td><td>Consommation locale (Philippines, Malaisie)</td></tr>
-          <tr><td><b>Excelsa</b> (<i>C. liberica</i> var. <i>dewevrei</i>)</td><td>marginal</td><td>Basse altitude</td><td>variable</td><td>Acidulé, fruits noirs, notes acidulées</td><td>Assemblages, Asie du Sud-Est</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="note">Parts de production : ordres de grandeur, variables selon les campagnes. L'arabica est autogame (il se pollinise lui-même) ; le robusta est allogame, plus résistant aux maladies et à la chaleur.</p>
-  </div>
-</section>
+<div class="wrap">
 
+<div data-bloc="TORR-02" data-p="intro"></div>
+<div class="table-wrap">
+<div data-bloc="TORR-03"></div>
+</div>
+<div data-bloc="TORR-04" data-p="note"></div>
+</div>
+</section>
 <!-- ============ VARIETES ============ -->
-<section id="varietes" class="alt">
-  <div class="wrap">
-    <h2>Les grandes variétés d'arabica</h2>
-    <p class="intro">Au sein de l'arabica, les variétés (ou cultivars) influencent le rendement, la résistance et le profil aromatique.</p>
-    <div class="grille">
-      <div class="carte"><h3>Typica</h3><p>L'une des variétés « mères », diffusée depuis le Yémen via Java. Tasse douce, propre et sucrée ; rendement faible.</p></div>
-      <div class="carte"><h3>Bourbon</h3><p>Issu de l'île Bourbon (La Réunion). Sucrosité marquée, notes de caramel et de fruits rouges. Existe en rouge, jaune et rose.</p></div>
-      <div class="carte"><h3>Caturra & Catuai</h3><p>Mutation naine du Bourbon (Caturra) et son croisement avec le Mundo Novo (Catuai). Productifs, très répandus en Amérique latine.</p></div>
-      <div class="carte"><h3>Geisha (Gesha)</h3><p>Originaire d'Éthiopie, révélée au Panama. Très florale (jasmin, bergamote, thé) ; parmi les cafés les plus chers au monde.</p></div>
-      <div class="carte"><h3>SL28 & SL34</h3><p>Sélectionnées au Kenya (Scott Laboratories). Acidité vive, notes de cassis et d'agrumes.</p></div>
-      <div class="carte"><h3>Pacamara & Maragogype</h3><p>Grains géants. Le Pacamara (Pacas × Maragogype, Salvador) est complexe, entre fruits tropicaux et épices.</p></div>
-      <div class="carte"><h3>Variétés éthiopiennes</h3><p>Des milliers de variétés locales, longtemps appelées « Heirloom », aujourd'hui de plus en plus identifiées (74110, 74112…). Grande diversité aromatique.</p></div>
-      <div class="carte"><h3>Hybrides résistants</h3><p>Catimor, Sarchimor, Castillo, Parainema… issus de l'Hybride de Timor, résistants à la rouille. Qualité en tasse en progrès constant.</p></div>
-    </div>
-  </div>
-</section>
+<section class="alt" id="varietes">
+<div class="wrap">
 
+<div data-bloc="TORR-05" data-p="intro"></div>
+<div class="grille">
+<div class="carte"><div data-bloc="TORR-06"></div></div>
+<div class="carte"><div data-bloc="TORR-07"></div></div>
+<div class="carte"><div data-bloc="TORR-08"></div></div>
+<div class="carte"><div data-bloc="TORR-09"></div></div>
+<div class="carte"><div data-bloc="TORR-10"></div></div>
+<div class="carte"><div data-bloc="TORR-11"></div></div>
+<div class="carte"><div data-bloc="TORR-12"></div></div>
+<div class="carte"><div data-bloc="TORR-13"></div></div>
+</div>
+</div>
+</section>
 <!-- ============ PROCEDES ============ -->
 <section id="procedes">
-  <div class="wrap">
-    <h2>Les procédés post-récolte</h2>
-    <p class="intro">Avant la torréfaction, la cerise est transformée en grain vert. Le procédé marque fortement la tasse, parfois autant que l'origine.</p>
-    <div class="grille">
-      <div class="carte"><div class="ico">💧</div><h3>Lavé (washed)</h3><p>On dépulpe la cerise, on fait fermenter le grain pour retirer le mucilage, puis on le lave et on le sèche. En tasse : propre, net, acidité claire, l'origine s'exprime.</p></div>
-      <div class="carte"><div class="ico">☀️</div><h3>Nature (natural)</h3><p>La cerise entière sèche au soleil pendant 2 à 4 semaines. En tasse : fruitée, vineuse, beaucoup de corps et de sucrosité.</p></div>
-      <div class="carte"><div class="ico">🍯</div><h3>Honey / pulped natural</h3><p>On dépulpe, mais une partie du mucilage reste sur le grain pendant le séchage (honey blanc, jaune, rouge, noir). En tasse : entre lavé et nature, ronde et sucrée.</p></div>
-      <div class="carte"><div class="ico">🫙</div><h3>Fermentations contrôlées</h3><p>Anaérobie en cuve fermée, macération carbonique, ajout de levures… En tasse : arômes intenses et parfois exubérants (fruits confits, épices, alcool).</p></div>
-      <div class="carte"><div class="ico">🌧️</div><h3>Voie semi-humide (giling basah)</h3><p>Spécifique à l'Indonésie : le grain est décortiqué encore humide. En tasse : terreuse, boisée, épicée, avec beaucoup de corps et peu d'acidité.</p></div>
-    </div>
-  </div>
-</section>
+<div class="wrap">
 
+<div data-bloc="TORR-14" data-p="intro"></div>
+<div class="grille">
+<div class="carte"><div class="ico">💧</div><div data-bloc="TORR-15"></div></div>
+<div class="carte"><div class="ico">☀️</div><div data-bloc="TORR-16"></div></div>
+<div class="carte"><div class="ico">🍯</div><div data-bloc="TORR-17"></div></div>
+<div class="carte"><div class="ico">🫙</div><div data-bloc="TORR-18"></div></div>
+<div class="carte"><div class="ico">🌧️</div><div data-bloc="TORR-19"></div></div>
+</div>
+</div>
+</section>
 <!-- ============ PHASES ============ -->
-<section id="phases" class="bleu motif">
-  <div class="wrap">
-    <h2>Les phases de la torréfaction</h2>
-    <p class="intro">Températures mesurées au niveau des grains, sur un torréfacteur à tambour. Elles varient selon la machine, la sonde et le grain : ce sont des repères, pas des consignes.</p>
-    <div class="frise">
-      <div class="etape">
-        <div class="temp">Ambiante → ~150 °C</div>
-        <h3>1. Séchage</h3>
-        <p>Le grain perd son eau (de 10–12 % d'humidité à presque rien). Il passe du vert au jaune et sent le foin, puis le pain. Cette phase représente environ 40 à 50 % du temps.</p>
-      </div>
-      <div class="etape">
-        <div class="temp">~150 → ~196 °C</div>
-        <h3>2. Maillard & caramélisation</h3>
-        <p>Les sucres et les acides aminés réagissent, et les arômes et la couleur brune se forment. Le grain gonfle et sent le biscuit, puis le caramel.</p>
-      </div>
-      <div class="etape">
-        <div class="temp">~196 → ~205 °C</div>
-        <h3>3. Premier crack</h3>
-        <p>La vapeur et le CO₂ font éclater la structure du grain, avec un bruit de pop-corn. Le café devient buvable : c'est le début du développement.</p>
-      </div>
-      <div class="etape">
-        <div class="temp">~205 → 230 °C et +</div>
-        <h3>4. Développement</h3>
-        <p>On choisit le moment de l'arrêt. Le second crack (~224–230 °C) marque l'entrée dans les torréfactions foncées, avec des huiles en surface. On refroidit ensuite vite, en 3 à 4 min.</p>
-      </div>
-    </div>
-    <div class="grille" style="margin-top:22px">
-      <div class="carte"><h3>Durée totale</h3><p>De 8 à 15 min sur un tambour classique, plus rapide sur un torréfacteur à air chaud. Trop rapide, le café est cuit à cœur de façon inégale ; trop lent, il est plat et « cuit ».</p></div>
-      <div class="carte"><h3>Perte de masse</h3><p>De 12 à 22 % selon le degré : environ 12–14 % pour un clair, 15–17 % pour un moyen, 18–22 % pour un foncé. Le grain double presque de volume.</p></div>
-    </div>
-  </div>
-</section>
+<section class="bleu motif" id="phases">
+<div class="wrap">
 
+<div data-bloc="TORR-20" data-p="intro"></div>
+<div class="frise">
+<div class="etape">
+<div class="temp" data-bloc="TORR-21" data-mode="ligne"></div>
+<div data-bloc="TORR-22"></div>
+
+</div>
+<div class="etape">
+<div class="temp" data-bloc="TORR-23" data-mode="ligne"></div>
+<div data-bloc="TORR-24"></div>
+
+</div>
+<div class="etape">
+<div class="temp" data-bloc="TORR-25" data-mode="ligne"></div>
+<div data-bloc="TORR-26"></div>
+
+</div>
+<div class="etape">
+<div class="temp" data-bloc="TORR-27" data-mode="ligne"></div>
+<div data-bloc="TORR-28"></div>
+
+</div>
+</div>
+<div class="grille" style="margin-top:22px">
+<div class="carte"><div data-bloc="TORR-29"></div></div>
+<div class="carte"><div data-bloc="TORR-30"></div></div>
+</div>
+</div>
+</section>
 <!-- ============ DEGRES ============ -->
 <section id="degres">
-  <div class="wrap">
-    <h2>Les degrés de torréfaction</h2>
-    <p class="intro">Plus la torréfaction est poussée, plus l'acidité et les arômes d'origine reculent au profit du corps, de l'amertume et des notes de torréfaction.</p>
-    <div class="nuancier">
-      <div style="background:#9DB27F;color:#2B1A0F"><b>Vert</b>non torréfié</div>
-      <div style="background:#D2AC74;color:#2B1A0F"><b>Cannelle</b>avant 1er crack</div>
-      <div style="background:#A9763F;color:#fff"><b>Clair</b>City</div>
-      <div style="background:#7D4F28;color:#fff"><b>Moyen</b>City+ / Full City</div>
-      <div style="background:#4F2F17;color:#fff"><b>Foncé</b>Vienne</div>
-      <div style="background:#2A1A0E;color:#fff"><b>Très foncé</b>Français / Italien</div>
-    </div>
-    <div class="table-wrap" style="margin-top:22px">
-      <table>
-        <thead><tr><th>Degré</th><th>Fin de torréfaction</th><th>Agtron (indicatif)</th><th>Aspect</th><th>En tasse</th><th>Pour</th></tr></thead>
-        <tbody>
-          <tr><td><b>Clair</b> (City)</td><td>~205–212 °C, peu après le 1er crack</td><td>65–75+</td><td>Brun clair, sec</td><td>Acidité vive, floral, fruité, thé</td><td>Filtre, cafés d'origine</td></tr>
-          <tr><td><b>Moyen</b> (City+ / Full City)</td><td>~212–222 °C, fin du 1er crack</td><td>50–65</td><td>Brun, sec</td><td>Équilibre acidité/sucrosité, caramel, chocolat au lait</td><td>Filtre, espresso, polyvalent</td></tr>
-          <tr><td><b>Moyen-foncé</b> (Full City+)</td><td>~222–226 °C, aux premiers sons du 2e crack</td><td>45–50</td><td>Brun foncé, quelques points d'huile</td><td>Corps, chocolat noir, épices</td><td>Espresso, lait</td></tr>
-          <tr><td><b>Foncé</b> (Vienne)</td><td>~226–232 °C, 2e crack franc</td><td>35–45</td><td>Brun très foncé, huileux</td><td>Amertume, torréfié, fumé</td><td>Espresso traditionnel</td></tr>
-          <tr><td><b>Très foncé</b> (Français / Italien)</td><td>&gt; 235 °C</td><td>&lt; 35</td><td>Presque noir, très huileux</td><td>Brûlé, cendré, origine effacée</td><td>Habitudes régionales</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="note">L'Agtron mesure la couleur par réflexion infrarouge : plus le chiffre est élevé, plus la torréfaction est claire. Les appellations (City, Full City…) ne sont pas normalisées et varient d'un torréfacteur à l'autre.</p>
-  </div>
-</section>
+<div class="wrap">
 
+<div data-bloc="TORR-31" data-p="intro"></div>
+<div class="nuancier">
+<div style="background:#9DB27F;color:#2B1A0F"><b>Vert</b>non torréfié</div>
+<div style="background:#D2AC74;color:#2B1A0F"><b>Cannelle</b>avant 1er crack</div>
+<div style="background:#A9763F;color:#fff"><b>Clair</b>City</div>
+<div style="background:#7D4F28;color:#fff"><b>Moyen</b>City+ / Full City</div>
+<div style="background:#4F2F17;color:#fff"><b>Foncé</b>Vienne</div>
+<div style="background:#2A1A0E;color:#fff"><b>Très foncé</b>Français / Italien</div>
+</div>
+<div class="table-wrap" style="margin-top:22px">
+<div data-bloc="TORR-32"></div>
+</div>
+<div data-bloc="TORR-33" data-p="note"></div>
+</div>
+</section>
 <!-- ============ PILOTAGE ============ -->
-<section id="pilotage" class="alt">
-  <div class="wrap">
-    <h2>Piloter une torréfaction</h2>
-    <div class="grille">
-      <div class="carte"><h3>Les types de torréfacteurs</h3>
-        <ul>
-          <li><b>Tambour</b> : cylindre rotatif chauffé (conduction et convection), le plus répandu.</li>
-          <li><b>Air chaud / lit fluidisé</b> : les grains flottent dans un flux d'air chaud (convection), ce qui donne une tasse nette et rapide.</li>
-          <li><b>Domestique</b> : poêle, machine à pop-corn, mini-tambours électriques.</li>
-        </ul>
-      </div>
-      <div class="carte"><h3>La courbe de torréfaction</h3><p>On suit la température des grains dans le temps, avec un logiciel comme Artisan ou RoastLog. Le <b>RoR</b> (Rate of Rise, en °C/min) doit décroître régulièrement : une remontée (flick) ou un effondrement (crash) en fin de torréfaction donne des goûts plats ou fumés.</p></div>
-      <div class="carte"><h3>Le temps de développement</h3><p>Le <b>DTR</b> (Development Time Ratio) est la part du temps total écoulée après le 1er crack. Repère courant : <b>15 à 25 %</b>. En dessous, le café est végétal et sous-développé ; au-dessus, il est plat et « cuit ».</p></div>
-      <div class="carte"><h3>Ce que l'on règle</h3><ul><li>Température de charge (« charge temp »)</li><li>Puissance de chauffe (gaz, résistance)</li><li>Débit d'air (extraction des fumées, des peaux et de la chaleur)</li><li>Vitesse du tambour</li><li>Taille du lot</li></ul></div>
-    </div>
-  </div>
-</section>
+<section class="alt" id="pilotage">
+<div class="wrap">
+<div data-bloc="TORR-34"></div>
+<div class="grille">
+<div class="carte"><div data-bloc="TORR-35"></div>
 
+</div>
+<div class="carte"><div data-bloc="TORR-36"></div></div>
+<div class="carte"><div data-bloc="TORR-37"></div></div>
+<div class="carte"><div data-bloc="TORR-38"></div></div>
+</div>
+</div>
+</section>
 <!-- ============ REPOS ============ -->
 <section id="repos">
-  <div class="wrap">
-    <h2>Repos, dégazage et conservation</h2>
-    <div class="grille">
-      <div class="carte"><div class="ico">💨</div><h3>Dégazage</h3><p>Le grain fraîchement torréfié libère du CO₂ pendant plusieurs jours. Trop de gaz gêne l'extraction : le café bulle beaucoup et l'espresso est instable.</p></div>
-      <div class="carte"><div class="ico">📅</div><h3>Temps de repos</h3><p>Filtre : à partir de <b>3 à 7 jours</b> après torréfaction. Espresso : à partir de <b>7 à 14 jours</b>. Les torréfactions claires demandent souvent plus de repos.</p></div>
-      <div class="carte"><div class="ico">🫙</div><h3>Conservation</h3><p>En grains, dans un sachet à valve ou une boîte hermétique, à l'abri de l'air, de la lumière, de la chaleur et de l'humidité. On moud juste avant de préparer. Le congélateur convient s'il est hermétique et en portions.</p></div>
-      <div class="carte"><div class="ico">🌱</div><h3>Le grain vert</h3><p>Il se conserve de 6 à 12 mois (humidité de 10–12 %, au frais, en sac GrainPro ou sous vide). Avec le temps, il perd ses arômes et prend des notes de carton et de jute.</p></div>
-    </div>
-  </div>
+<div class="wrap">
+<div data-bloc="TORR-39"></div>
+<div class="grille">
+<div class="carte"><div class="ico">💨</div><div data-bloc="TORR-40"></div></div>
+<div class="carte"><div class="ico">📅</div><div data-bloc="TORR-41"></div></div>
+<div class="carte"><div class="ico">🫙</div><div data-bloc="TORR-42"></div></div>
+<div class="carte"><div class="ico">🌱</div><div data-bloc="TORR-43"></div></div>
+</div>
+</div>
 </section>
-
 <footer class="site">
-  <div class="wrap">
-    <span>© 2026 <b>Antoine ASCENSI</b> — cafe.ascensi.com</span>
-    <span><a href="preparation.html">Préparation</a> · <a href="torrefaction.html">Torréfaction</a> · <a href="origines.html">Origines</a> · <a href="materiel.html">Matériel</a> · <a href="glossaire.html">Glossaire</a></span>
-  </div>
+<div class="wrap">
+<span>© 2026 <b>Antoine ASCENSI</b> — cafe.ascensi.com</span>
+<span><a href="preparation.html">Préparation</a> · <a href="torrefaction.html">Torréfaction</a> · <a href="origines.html">Origines</a> · <a href="materiel.html">Matériel</a> · <a href="glossaire.html">Glossaire</a></span>
+</div>
 </footer>
 <script src="script.js"></script>
 </body>
